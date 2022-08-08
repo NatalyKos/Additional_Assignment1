@@ -4,7 +4,7 @@ string input = Console.ReadLine();
 string answer = "42";
 int counter = 3;
 string secret = "So long, and thanks for all the fish";
-while(counter > 1)
+while(counter >= 1)
 {
     if(input == answer)
         {
@@ -17,25 +17,6 @@ while(counter > 1)
         Console.WriteLine("You are wrong. The number of tries you have left: " + counter);
         Console.Write("Enter your answer here: ");
         string input1 = Console.ReadLine();
-        
-        if(input1 == answer)
-        {
-            Console.WriteLine(secret);
-            break;
-        }
-        else
-        {
-        counter--;
-        Console.WriteLine("You are wrong. The number of tries you have left: " + counter);
-        Console.Write("Enter your answer here: ");
-        string big = Console.ReadLine();
-            if(big == answer)
-            {
-            Console.WriteLine(secret);
-            break;
-            }
-        }
+        input = input1;
     }
-    
-Console.WriteLine("Try harder next time!");
 }
