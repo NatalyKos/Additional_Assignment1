@@ -42,14 +42,14 @@ while (isWork)
             password = ReadInt("You haven't set a password yet. Set a numerical password: ");
             while (ReadInt("Hey, " + name + " " + "enter the correct password to continue: ") != password)
             {
-                ReadInt("Hey, " + name + " " + "enter the correct password to continue: ");
+                Console.Write("Wrong password. ");
             }
         }
         else
         {
             while (ReadInt("Hey, " + name + " " + "enter the correct password to continue: ") != password)
             {
-                ReadInt("Hey, " + name + " " + "enter the correct password to continue: ");
+                Console.Write("Wrong password. ");
             }
         }
             Console.WriteLine(DateTime.Now + " " + name);
